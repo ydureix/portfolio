@@ -1,24 +1,124 @@
 <!doctype html>
 <html lang="en">
-
-<!--
-WRITTEN BY: Rudy Xie
-EMAIL: rudyx@uci.edu
--->
-
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Zain&display=swap" rel="stylesheet">
+  <title>Ydureix</title>
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <!--Main Title Screen of my Webapge-->
+  <div class="name-container">
+    <div class="myname">
+      <h1 class="mynametext">Hello, I'm <span class="name-style">Rudy</span>.
+        <br>I'm a Fullstack Developer
+      </h1>
+    </div>
+  </div>
+  <!--NavBar for nagivation around my webapge-->
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <!--Main Content contains project section, about me section, and contact me section-->
+  <div class="main-content">
+    <!--About me Section of Webpage-->
+    <div class="container" id="about">
+      <h2>
+        <span class="about-heading">
+          About Me
+        </span>
+      </h2>
+      <!--About me Text-->
+      <div class="about-me-text">
+        <img class="profile-style" src="images/dprof.png" alt="Profile Picture">
+        <p class="text-box">
+            I am an enthusiastic and dedicated undergraduate software engineer with
+            a passion for building innovative solutions and solving real-world problems
+            through code. My technical expertise spans multiple languages, including Python,
+            Java, C++, HTML, and CSS. I enjoy collaborating on dynamic projects and continuously
+            expanding my knowledge to stay at the forefront of technology trends.
+            On my free time I enjoy reading and writing stories.
+        </p>
+      </div>
+      <!--Skills to show off programming languages-->
+      <div class="skills">
+        <img class="btn-gradient-2" src="images/pythonlogo.png" alt="Python Logo">
+        <img class="btn-gradient-2" src="images/javalogo.png" alt="Java Logo">
+        <img class="btn-gradient-2" src="images/c++logo.png" alt="C++ Logo">
+        <img class="btn-gradient-2" src="images/csslogo.png" alt="CSS Logo">
+        <img class="btn-gradient-2" src="images/html-logo.png" alt="HTML Logo">
+        <img class="btn-gradient-2" src="images/gitlogo.png" alt="Git Logo">
+      </div>
+    </div>
+    <!--Show off my projects. Currently under development and need to add relevant projects in the future-->
+    <div class="container" id="projects">
+      <h2>
+        <span class="project-heading">
+          Projects
+        </span>
+      </h2>
+      <div class="project-show">
+        <div class="project-container">
+          <p class="project-description"><strong style="font-size:150%">ZotSearch 121 (PLACEHOLDERS)</strong>
+            <br>Full Stack WebSearch Engine for UCI Students
+            <br>Built with Python and Flask
+          </p>
+          <img class="project-image" src="images/projectholder.jpg" alt="Image of Project">
+        </div>
+        <div class="project-container-left">
+          <img class="project-image-left" src="images/projectholder.jpg" alt="Image of Project">
+          <p class="project-description-left">
+            <strong style="font-size:150%">ZotSearch 121 (PLACEHOLDERS)</strong>
+            <br>Full Stack WebSearch Engine for UCI Students
+            <br>Built with Python and Flask
+          </p>
+          
+        </div>
+        <div class="project-container">
+          <p class="project-description"><strong style="font-size:150%">ZotSearch 121 (PLACEHOLDERS)</strong>
+          <br>Full Stack WebSearch Engine for UCI Students
+          <br>Built with Python and Flask
+          </p>
+          <img class="project-image" src="images/projectholder.jpg" alt="Image of Project">
+        </div>
+      </div>
+    </div>
+    <!--Contact me section. Need to add text connection in the future (PHP?)-->
+    <div class="container" id="contact">
+      <h2>
+        <span class="contact-heading">
+          Contact Me
+        </span>
+      </h2>
+      <div>
+        <form class="contact-me-form">
+          <div class="email-form">
+            <label class="style-of-email" for="email">Email</label>
+            <input type="email" id="email" name="email" style="width: 100%;">
+          </div>
+          <div class="message-form">
+            <label for="message" class="style-of-message">Message</label>
+            <textarea id="message" name="message" rows="10" style="width: 100%;"></textarea>
+          </div>
+          <button type="submit" class="btn-gradient-2">Send</button>
+        </form>
+      </div>
+    </div>
+    <!--Socials for people to click on that link to my github and linkedin-->
+    <div class="last-container">
+      <div class="anchorflexmiddle">
+        <a href="https://www.linkedin.com/in/rudy-xie-60142226a/" target="_blank">
+          <img class="btn-gradient-2" src="images/LinkinLogo.png" alt="Linkin Logo">
+        </a>
+        <a href="https://github.com/Wuuuuushi" target="_blank">
+          <img class="btn-gradient-2" src="images/github.png" alt="GitHub Logo">
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

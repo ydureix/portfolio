@@ -1,0 +1,677 @@
+
+body {
+    font-family: "Zain", sans-serif;
+    background-color: #141313;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.about-me-text{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.last-container{
+    margin-top:2vw;
+
+}
+.name-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    justify-content:center;
+}
+
+
+.myname {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fafafa;
+    font-weight: 300;
+    z-index: 999;
+}
+
+.name-style{
+    color:rgb(147, 231, 147);
+}
+
+.btn-gradient-2 {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: linear-gradient(#141313, #141313) padding-box,
+                linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 2em;
+    border:solid transparent;
+}
+
+.project-show{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.project-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: right;
+    margin-bottom:2.5vw;
+
+}
+
+.project-container-left{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: left;
+    margin-bottom:2.5vw;
+}
+
+p.project-description{
+    font-size:1.5vw;
+    position:absolute;
+    left:12%;
+    font-family: "Zain", sans-serif;
+    width:25%;
+    z-index:1;
+
+}
+
+p.project-description-left{
+    font-size:1.5vw;
+    position:absolute;
+    right:9%;
+    font-family: "Zain", sans-serif;
+    width:25%;
+    z-index:1;
+}
+
+
+img.project-image{
+    width:50%;
+    height:20%;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-left:10%;
+    margin-bottom:1em;
+    background-color: #ff4d5a;
+    border-width: 1vw;
+    z-index:0;
+}
+
+
+
+img.project-image-left{
+    width:50%;
+    height:20%;
+    padding-top:5%;
+    padding-bottom:5%;
+    padding-right:10%;
+    margin-bottom:1em;
+    background-color: #ff4d5a;
+    border-width: 1vw;
+    z-index:0;
+}
+
+.navbar {
+    background-color: #201f1f;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-align: center;
+    padding:0.5vw 1em;
+    text-decoration: none;
+    font-size:2vw;
+}
+
+.navbar a:hover {
+    background-color: #201f1f;
+    border-radius: 0.5em;
+}
+
+.main-content {
+    background-color: #141313;
+    width: 100%;
+    padding: 3em;
+    box-sizing: border-box;
+}
+
+
+
+
+.skills{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    gap:3em;
+
+}
+
+.socialmedia{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content: center;
+    gap:3em;
+
+}
+
+
+
+.container {
+    padding-top: 2em;
+    margin: auto;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 1em;
+    border-bottom: 1px white solid;
+}
+
+.background-highlight{
+    display: inline-block;
+    background-color:rgb(148, 4, 4);
+    width: 50%; /* Adjust underline length */
+    height: 1em;
+    width: fit-content; /* Adjusts to content length */
+
+}
+
+
+.about-heading::before {
+    content: ''; /* Empty content for the box */
+    position: absolute;
+    border-bottom: 0.3em solid #ff4d5a; /* Color of the box */
+    width: 90%; /* Width of the box */
+    left: 0.5em; /* Position the box relative to the text */
+    bottom: 20%; /* Adjust box placement relative to the text */
+    z-index: -1;
+    margin: 0 auto; /* Optional: Center the box */
+}
+
+
+.project-heading::before {
+    content: ''; /* Empty content for the box */
+    position: absolute;
+    border-bottom: 0.3em solid #ff4d5a; /* Color of the box */
+    width: 90%; /* Width of the box */
+    left: 0.5em; /* Position the box relative to the text */
+    bottom: 20%; /* Adjust box placement relative to the text */
+    z-index: -1;
+    margin: 0 auto; /* Optional: Center the box */
+}
+
+
+.contact-heading::before {
+    content: ''; /* Empty content for the box */
+    position: absolute;
+    border-bottom: 0.3em solid #ff4d5a; /* Color of the box */
+    width: 90%; /* Width of the box */
+    left: 0.5em; /* Position the box relative to the text */
+    bottom: 20%; /* Adjust box placement relative to the text */
+    z-index: -1;
+    margin: 0 auto; /* Optional: Center the box */
+}
+
+p.text-box{
+    font-size:1.5vw;
+    border:solid;
+    border-radius:2em;
+    padding:1em;
+}
+
+h2{
+    font-size:2vw;
+    text-align:center;
+
+}
+
+#about, #projects, #contact {
+    color: white;
+
+}
+
+
+
+/* Mobile first approach (default) */
+
+/* Adjust for small screens (phones) */
+@media (max-width: 600px) {
+
+    .profile-style{
+        width:40vw;
+        height:40vw;
+    }
+
+    .style-of-message{
+        font-size:4vw;
+    }
+
+    .style-of-email{
+        font-size:4vw;
+    }
+    .contact-me-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center; /* Center children elements horizontally */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    button.btn-gradient-2{
+        font-size:3vw;
+        color:white;
+    }
+    .email-form, .message-form {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+    }
+    
+    #email, #message {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: #201f1f;
+        color: white;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+        width: fit-content;
+        padding: 0.5em 1em;
+        font-family:"Zain", sans-serif;
+    }
+
+    img.btn-gradient-2{
+        width:10%;
+        height:auto;
+    }
+    .anchorflexmiddle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+    
+        gap:3em;
+    }
+    
+    .anchorflexmiddle a {
+        display: inline-block;  /* Tighten the size to content (image) */
+        padding: 0;  /* Remove any extra padding */
+        margin: 0;  /* Remove any extra margin */
+    }
+    
+    .anchorflexmiddle img {
+        width: 3em;  /* Set the desired size for the images */
+        height:3em;  /* Keep images consistent in size */
+        display: block;  /* Prevent extra space under the image */
+    }
+    .about-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .contact-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+
+    .project-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .myname {
+        font-size: 5vw;
+    }
+    h2{
+        font-size:5vw;
+    }
+    p.text-box{
+        font-size: 4vw;
+    }
+
+
+    p.project-description{
+        font-size:3vw;
+        position:absolute;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+    
+    p.project-description-left{
+        font-size:3vw;
+        position:absolute;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+    
+    .navbar a {
+        font-size: 5vw;
+        padding-left:3vw;
+    }
+
+
+    .skills, .socialmedia, .anchorflexmiddle {
+        flex-direction: row;  /* Stack items vertically */
+        gap: 1em;
+    }
+}
+
+/* Adjust for tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .profile-style{
+        width:40vw;
+        height:40vw;
+    }
+    .style-of-message{
+        font-size:4vw;
+    }
+
+    .style-of-email{
+        font-size:4vw;
+    }
+    .contact-me-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center; /* Center children elements horizontally */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    button.btn-gradient-2{
+        font-size:3vw;
+        color:white;
+    }
+    .email-form, .message-form {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+    }
+    
+    #email, #message {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: #201f1f;
+        color: white;
+        font-size: 3vw;;
+        box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+        width: fit-content;
+        padding: 0.5em 1em;
+        font-family:"Zain", sans-serif;
+    }
+
+    img.btn-gradient-2{
+        width:8vw;
+        height:auto;
+    }
+    .anchorflexmiddle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+    
+        gap:3em;
+    }
+    
+    .anchorflexmiddle a {
+        display: inline-block;  /* Tighten the size to content (image) */
+        padding: 0;  /* Remove any extra padding */
+        margin: 0;  /* Remove any extra margin */
+
+    }
+    
+    .anchorflexmiddle img {
+        width: 3em;  /* Set the desired size for the images */
+        height:3em;  /* Keep images consistent in size */
+        display: block;  /* Prevent extra space under the image */
+    }
+    .about-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .contact-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+
+    .project-heading {
+        position: relative;
+        font-size: 7vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .myname {
+        font-size: 5vw;
+    }
+    h2{
+        font-size:5vw;
+    }
+    p.text-box{
+        font-size: 3.7vw;
+    }
+
+
+    p.project-description{
+        font-size:3vw;
+        position:absolute;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+    
+    p.project-description-left{
+        font-size:3vw;
+        position:absolute;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+    
+    
+    .navbar a {
+        font-size: 4vw;
+    }
+
+    .skills, .socialmedia, .anchorflexmiddle {
+        gap: 2em;
+    }
+}
+
+
+/* Desktop screens */
+@media (min-width: 1025px) {
+    .profile-style{
+        width:18vw;
+        height:18vw;
+        margin-right:2vw;
+    }
+    .style-of-message{
+        font-size:2vw;
+    }
+
+    .style-of-email{
+        font-size:2vw;
+    }
+    .contact-me-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center; /* Center children elements horizontally */
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    button.btn-gradient-2{
+        font-size:2vw;
+        color:white;
+    }
+    .email-form, .message-form {
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+    }
+    
+    #email, #message {
+        width: 100%;
+        padding: 0.5em;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: #201f1f;
+        color: white;
+        font-size: 1vw;
+        box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+        width: fit-content;
+        padding: 0.5em 1em;
+        font-family:"Zain", sans-serif;
+    }
+
+    img.btn-gradient-2{
+        width:5%;
+        height:auto;
+    }
+    .anchorflexmiddle{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content: center;
+    
+        gap:3em;
+    }
+    
+    .anchorflexmiddle a {
+        display: inline-block;  /* Tighten the size to content (image) */
+        padding: 0;  /* Remove any extra padding */
+        margin: 0;  /* Remove any extra margin */
+    }
+    
+    .anchorflexmiddle img {
+        width: 3em;  /* Set the desired size for the images */
+        height:3em;  /* Keep images consistent in size */
+        display: block;  /* Prevent extra space under the image */
+    }
+    .about-heading {
+        position: relative;
+        font-size: 4vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .contact-heading {
+        position: relative;
+        font-size: 4vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+
+    .project-heading {
+        position: relative;
+        font-size: 4vw; /* Adjust font size as needed */
+        z-index: 0;
+        
+    }
+    .myname {
+        font-size: 4.1vw;
+    }
+
+    h2{
+        font-size:1vw;
+    }
+    p.text-box{
+        width:50%;
+        font-size: 1.5vw;
+    }
+
+    p.project-description{
+        font-size:2vw;
+        position:absolute;
+        left:10%;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+
+    p.project-description-left{
+        font-size:2vw;
+        position:absolute;
+        font-family: "Zain", sans-serif;
+        width:25%;
+        z-index:1;
+
+    }
+    
+    
+    .navbar a {
+        font-size: 2vw;
+    }
+
+    .skills, .socialmedia, .anchorflexmiddle {
+        gap: 2em;
+    }
+}
